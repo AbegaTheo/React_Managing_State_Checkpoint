@@ -1,0 +1,205 @@
+/* Style global pour l'application */
+.App {
+  text-align: center; /* Centre le texte dans l'application */
+}
+
+/* Style pour le logo de l'application */
+.App-logo {
+  height: 40vmin; /* Définit la taille du logo */
+  pointer-events: none; /* Désactive les interactions avec le logo */
+}
+
+/* Animation pour le logo (rotation infinie) */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Rotation infinie en 20 secondes */
+  }
+}
+
+/* Style pour l'en-tête de l'application */
+.App-header {
+  background-color: #282c34; /* Couleur de fond sombre */
+  display: flex; /* Utilise un conteneur flex */
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  font-size: calc(10px + 2vmin); /* Taille de police responsive */
+  color: white; /* Couleur du texte */
+}
+
+/* Style pour les liens dans l'application */
+.App-link {
+  color: #61dafb; /* Couleur bleue pour les liens */
+}
+
+/* Animation pour la rotation du logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Début de la rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Fin de la rotation */
+  }
+}
+
+/* Style global pour le corps de la page */
+body {
+  background: linear-gradient(135deg, #f1f1f1, #c4e0e5); /* Dégradé de fond */
+  font-family: 'Arial', sans-serif; /* Police par défaut */
+  background-color: #f4f4f4; /* Couleur de fond de secours */
+  margin: 0; /* Supprime les marges */
+  padding: 0; /* Supprime les espacements */
+  display: flex; /* Utilise un conteneur flex */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Hauteur de la page */
+}
+
+/* Style pour le titre principal */
+h1 {
+  text-align: center; /* Centre le texte */
+  color: #333; /* Couleur sombre pour le texte */
+  margin-bottom: 100px; /* Espacement en bas */
+}
+
+/* Style pour le formulaire */
+form {
+  display: flex; /* Utilise un conteneur flex */
+  flex-direction: column; /* Empile les éléments verticalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  gap: 15px; /* Espacement entre les éléments */
+  margin: 20px; /* Espacement autour du formulaire */
+  background-color: #fff; /* Couleur de fond blanche */
+  padding: 30px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  min-width: 500px; /* Largeur minimale */
+}
+
+/* Style pour les champs de saisie */
+form input {
+  padding: 15px; /* Espacement interne */
+  font-size: 16px; /* Taille de police */
+  border-radius: 5px; /* Coins arrondis */
+  border: 1px solid #ddd; /* Bordure grise */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour le bouton du formulaire */
+form button {
+  background-color: #4CAF50; /* Couleur verte */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  padding: 15px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main */
+  font-weight: bold; /* Texte en gras */
+  font-size: 16px; /* Taille de police */
+  max-width: 50%; /* Largeur maximale */
+  margin: 0 auto; /* Centre le bouton */
+}
+
+/* Effet au survol du bouton */
+form button:hover {
+  background-color: #45a049; /* Couleur verte plus foncée */
+}
+
+/* Style pour la liste des tâches */
+ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime les marges internes */
+  display: flex; /* Utilise un conteneur flex */
+  flex-direction: column; /* Empile les éléments verticalement */
+  gap: 10px; /* Espacement entre les éléments */
+  align-items: center; /* Centre les éléments horizontalement */
+  transition: all 0.3s ease-in-out; /* Transition fluide */
+}
+
+/* Style pour chaque tâche */
+li {
+  background-color: #fff; /* Couleur de fond blanche */
+  padding: 15px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  width: 100%; /* Prend toute la largeur disponible */
+  display: flex; /* Utilise un conteneur flex */
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Aligne les éléments verticalement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transition fluide */
+  overflow: hidden; /* Empêche le débordement */
+  max-width: 90%; /* Largeur maximale */
+  word-wrap: break-word; /* Coupe les mots longs */
+}
+
+/* Style pour les tâches complétées */
+li.completed {
+  background-color: #d4edda; /* Couleur verte pâle */
+  color: #155724; /* Couleur verte foncée */
+  border-left: 5px solid #28a745; /* Bordure verte */
+}
+
+/* Style pour les boutons */
+button {
+  background-color: #ff6347; /* Couleur rouge */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  padding: 5px 10px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main */
+  font-size: 1em; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  transition: background-color 0.3s ease-in-out; /* Transition fluide */
+}
+
+/* Effet au survol des boutons */
+button:hover {
+  background-color: #ff4e28; /* Couleur rouge plus foncée */
+}
+
+/* Style pour le texte des tâches */
+li span {
+  flex-grow: 1; /* Prend tout l'espace disponible */
+  font-size: 16px; /* Taille de police */
+  text-decoration: none; /* Supprime le soulignement */
+  color: #333; /* Couleur sombre */
+}
+
+/* Style pour les boutons dans les tâches */
+li button {
+  margin-left: 5px; /* Espacement à gauche */
+}
+
+/* Style pour les boutons lorsqu'ils sont sélectionnés */
+button:focus {
+  outline: none; /* Supprime le contour par défaut */
+}
+
+/* Effet au survol des tâches */
+li:hover {
+  transform: scale(1.02); /* Agrandit légèrement la tâche */
+  transition: transform 0.2s ease-in-out; /* Transition fluide */
+}
+
+/* Effet de focus sur les champs de saisie */
+form input:focus {
+  border: 1px solid #4CAF50; /* Bordure verte */
+}
+
+/* Effet de focus sur les boutons */
+form button:focus {
+  background-color: #45a049; /* Couleur verte plus foncée */
+}
+
+/* Style pour les boutons de filtre */
+.filter-buttons {
+  display: flex; /* Utilise un conteneur flex */
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 15px; /* Espacement entre les éléments */
+  margin-top: 20px; /* Espacement en haut */
+}
+
+.filter-buttons button.active {
+  background-color: #4CAF50; /* Couleur verte pour le bouton actif */
+  color: white; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+}
